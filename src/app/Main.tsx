@@ -22,7 +22,7 @@ export const Main = () => {
 
 
     return (
-        <div style={{backgroundColor: "#ffffff", width: "80%", padding: 20}}>
+        <div style={{backgroundColor: "#ffffff", width: "80%", padding: 20, borderRadius: 10}}>
             <Grid container spacing={2}>
                 <Grid item xs={4}>
                     <Sidebar/>

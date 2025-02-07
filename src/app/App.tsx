@@ -14,7 +14,7 @@ function App() {
             justifyContent: "center",
         }}>
             <Container>
-                <Box sx={{bgcolor: '#cfe8fc', display: "flex", justifyContent: "center", padding: "30px 0"}}>
+                <Box sx={{bgcolor: '#cfe8fc', display: "flex", justifyContent: "center", padding: "30px 0", borderRadius: 5}}>
                     <Main/>
                 </Box>
             </Container>

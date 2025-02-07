@@ -2,7 +2,7 @@ import React from 'react';
 import {SubmitHandler, useForm} from "react-hook-form";
 import {Button, Container, TextField} from "@mui/material";
 import {useAppDispatch} from "../../../../common/hooks/hooks";
-import {setStep} from "../../../../app/appSlice";
+import {nextStep} from "../../../../app/appSlice";
 
 type Inputs = {
     name: string,
@@ -16,7 +16,7 @@ export const Step1 = () => {
 
     const onSubmit: SubmitHandler<Inputs> = (data) => {
         console.log(data);
-        dispatch(setStep())
+        dispatch(nextStep())
     }
 
     return (
