@@ -5,6 +5,7 @@ import {Step1} from "../features/step1/ui/Step1/Step1";
 import {useAppSelector} from "../common/hooks/hooks";
 import {selectStep} from "./appSlice";
 import {Step2} from "../features/step2/ui/Step2/Step2";
+import {Step3} from "../features/step3/ui/Step3/Step3";
 
 export const Main = () => {
     const step = useAppSelector(selectStep)
@@ -15,6 +16,8 @@ export const Main = () => {
                 return <Step1 />
             case 2:
                 return <Step2 />
+            case 3:
+                return <Step3 />
             default:
                 return <Step1 />
         }
