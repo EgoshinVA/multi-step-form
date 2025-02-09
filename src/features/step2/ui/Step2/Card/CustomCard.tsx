@@ -17,7 +17,8 @@ export const CustomCard = ({title, price, image, active, setCurrentCard}: Props)
             <CardContent onClick={setCurrentCard} style={active ? activeClass : {borderRadius: 4, width: 90}}>
                 <img src={image} alt={`${image}`}/>
                 <Typography style={{marginTop: 25}} variant="h6" component="div">{title}</Typography>
-                <Typography sx={{ color: 'text.secondary', mb: 1.5 }}>{price}</Typography>
+                <Typography sx={{color: 'text.secondary', mb: 1.5}}>{price}</Typography>
             </CardContent>
         </React.Fragment>
-    )}
+    )
+}
